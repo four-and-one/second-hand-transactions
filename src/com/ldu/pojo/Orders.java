@@ -1,28 +1,18 @@
 package com.ldu.pojo;
 /**
  * 订单
- * @author lyq
  *
  */
 public class Orders {
 	private Integer id;
-
 	private Integer userId;
-    
 	private Goods goods;
-	
 	private Integer goodsId;
-
-    private Long orderNum;
-    
-    private Float orderPrice;
-
-    private Integer orderState;
-    
-    private String orderInformation;
-
-    private String orderDate;
-
+        private Long orderNum;
+        private Float orderPrice;
+        private Integer orderState;
+        private String orderInformation;
+        private String orderDate;
 	public Integer getId() {
 		return id;
 	}
