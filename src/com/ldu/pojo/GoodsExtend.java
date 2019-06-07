@@ -1,7 +1,6 @@
 package com.ldu.pojo;
 /**
  * 商品拓展 联合查询
- * @author lyq
  *
  */
 import java.util.ArrayList;
