@@ -1,20 +1,14 @@
 package com.ldu.pojo;
 /**
  * 回复
- * @author lyq
  *
  */
 public class Reply {
     private Integer id;
-
     private Integer userId;
-
     private Integer atuserId;
-
     private Integer commetId;
-
     private String createAt;
-
     private String content;
 
     public Integer getId() {
