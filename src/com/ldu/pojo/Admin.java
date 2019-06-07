@@ -1,7 +1,6 @@
 package com.ldu.pojo;
 /**
  * 管理员
- * @author lyq
  *
  */
 public class Admin {
@@ -23,8 +22,6 @@ public class Admin {
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
-
-	
 	public Long getPhone() {
 		return phone;
 	}
