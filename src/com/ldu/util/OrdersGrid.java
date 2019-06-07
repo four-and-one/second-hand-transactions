@@ -2,13 +2,10 @@ package com.ldu.util;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-import com.ldu.pojo.Orders;
+import com.ldu.entity.Orders;
 
 import java.util.List;
 
-/**
- * Created by lyq on 2018/4/26.
- */
 
 @XmlRootElement
 public class OrdersGrid {

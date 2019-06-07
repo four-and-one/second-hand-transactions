@@ -8,15 +8,14 @@ import org.springframework.stereotype.Service;
 
 import com.github.pagehelper.PageHelper;
 import com.ldu.dao.GoodsMapper;
-import com.ldu.pojo.CommentExtend;
-import com.ldu.pojo.Comments;
-import com.ldu.pojo.Goods;
+import com.ldu.entity.CommentExtend;
+import com.ldu.entity.Comments;
+import com.ldu.entity.Goods;
 import com.ldu.service.GoodsService;
 import com.ldu.util.DateUtil;
 /**
  * 对商品的操作类（增删改查）
  * @ClassName 	GoodServiceImpl
- * @date		2017-5-9下午9:22:24
  */
 
 @Service("goodsService")

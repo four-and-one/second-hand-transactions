@@ -13,10 +13,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.ldu.pojo.Goods;
-import com.ldu.pojo.Orders;
-import com.ldu.pojo.Purse;
-import com.ldu.pojo.User;
+import com.ldu.entity.Goods;
+import com.ldu.entity.Orders;
+import com.ldu.entity.Purse;
+import com.ldu.entity.User;
 import com.ldu.service.GoodsService;
 import com.ldu.service.OrdersService;
 import com.ldu.service.PurseService;

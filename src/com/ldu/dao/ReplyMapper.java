@@ -1,6 +1,6 @@
 package com.ldu.dao;
 
-import com.ldu.pojo.Reply;
+import com.ldu.entity.Reply;
 
 public interface ReplyMapper {
     int deleteByPrimaryKey(Integer id);

@@ -2,7 +2,7 @@ package com.ldu.dao;
 
 import java.util.List;
 
-import com.ldu.pojo.Focus;
+import com.ldu.entity.Focus;
 
 public interface FocusMapper {
 	

@@ -2,8 +2,7 @@ package com.ldu.service;
 
 import java.util.List;
 
-import com.ldu.pojo.Notice;
-import com.ldu.pojo.NoticeExtend;
+import com.ldu.entity.Notice;
 
 public interface NoticeService {
 

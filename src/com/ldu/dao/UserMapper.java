@@ -2,7 +2,7 @@ package com.ldu.dao;
 
 import org.apache.ibatis.annotations.Param;
 
-import com.ldu.pojo.User;
+import com.ldu.entity.User;
 
 import java.util.List;
 

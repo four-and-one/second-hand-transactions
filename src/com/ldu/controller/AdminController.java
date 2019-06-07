@@ -1,10 +1,10 @@
 package com.ldu.controller;
 
-import com.ldu.pojo.Admin;
-import com.ldu.pojo.Goods;
-import com.ldu.pojo.Orders;
-import com.ldu.pojo.Purse;
-import com.ldu.pojo.User;
+import com.ldu.entity.Admin;
+import com.ldu.entity.Goods;
+import com.ldu.entity.Orders;
+import com.ldu.entity.Purse;
+import com.ldu.entity.User;
 import com.ldu.service.AdminService;
 import com.ldu.service.GoodsService;
 import com.ldu.service.OrdersService;
@@ -23,9 +23,6 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-/**
- *  2018-3-7 10:40:38
- */
 @Controller
 @RequestMapping(value = "/admin")
 public class AdminController {

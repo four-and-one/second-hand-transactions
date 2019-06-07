@@ -2,7 +2,7 @@ package com.ldu.dao;
 
 import java.util.List;
 
-import com.ldu.pojo.Image;
+import com.ldu.entity.Image;
 
 public interface ImageMapper {
     int deleteByPrimaryKey(Integer id);

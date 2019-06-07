@@ -1,9 +1,9 @@
 package com.ldu.service;
 
 import java.util.List;
-import com.ldu.pojo.CommentExtend;
-import com.ldu.pojo.Comments;
-import com.ldu.pojo.Goods;
+import com.ldu.entity.CommentExtend;
+import com.ldu.entity.Comments;
+import com.ldu.entity.Goods;
 
 public interface GoodsService {
     /**

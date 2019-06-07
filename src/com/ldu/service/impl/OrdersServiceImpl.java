@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.github.pagehelper.PageHelper;
 import com.ldu.dao.OrdersMapper;
-import com.ldu.pojo.Orders;
+import com.ldu.entity.Orders;
 import com.ldu.service.OrdersService;
 
 @Service("ordersService")

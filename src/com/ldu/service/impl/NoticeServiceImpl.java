@@ -6,8 +6,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 import com.ldu.dao.NoticeMapper;
-import com.ldu.pojo.Notice;
-import com.ldu.pojo.NoticeExtend;
+import com.ldu.entity.Notice;
 import com.ldu.service.NoticeService;
 
 @Service("NoticeService")

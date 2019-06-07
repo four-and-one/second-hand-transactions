@@ -2,7 +2,7 @@ package com.ldu.service;
 
 import java.util.List;
 
-import com.ldu.pojo.Purse;
+import com.ldu.entity.Purse;
 
 public interface PurseService {
 	

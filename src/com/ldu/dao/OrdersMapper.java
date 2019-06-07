@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Param;
 
-import com.ldu.pojo.Orders;
+import com.ldu.entity.Orders;
 public interface OrdersMapper {
 	/**
 	 * 查询用户的订单 买

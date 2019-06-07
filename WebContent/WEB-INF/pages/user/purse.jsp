@@ -142,15 +142,15 @@
 										 
 										 <c:if test="${myPurse.state==0}">
 										 <c:if test="${myPurse.recharge!=null}">
-										 <a   class="btn btn-danger">【申请提现中】,待管理员审核！</a>
+										 <a   class="btn btn-danger">【申请中】,请等待！</a>
 										 </c:if>
 										 <c:if test="${myPurse.withdrawals!=null}">
-										 <a   class="btn btn-danger">【申请充值中】,待管理员审核！</a>
+										 <a   class="btn btn-danger">【申请中】,请等待！</a>
 										 </c:if>
 										 </c:if>
 										 
 										  <c:if test="${myPurse.state==1 or myPurse.state==2}">
-										 <a   class="btn btn-danger btn_mypurse">请点击查看审核结果！</a>
+										 <a   class="btn btn-danger btn_mypurse">【申请中】,请等待！</a>
 										 </c:if>
 									</div>
 								</div>
@@ -232,6 +232,7 @@ $(".btn_mypurse").on('click',function(){
 		var reg=/^[1-9]\d*$|^0$/;  
 		if(num==1){
 			var Recharge=$(" input[ name='recharge' ] ").val();
+
 			if(Recharge==null || Recharge==""){
 				alert("请输入您要充值的金额！")
 			}else if(reg.test(Recharge)!=true){
@@ -240,7 +241,7 @@ $(".btn_mypurse").on('click',function(){
 				$(".withdrawals").val("");
 				//提交表单
 		        $("#myUpAndDwon").submit();
-				alert("申请充值成功，等待管理员审核~")
+				alert("正在申请中~")
 			}
 			
 		}
@@ -256,7 +257,7 @@ $(".btn_mypurse").on('click',function(){
 			$(".Recharge").val("");
 			//提交表单
 	        $("#myUpAndDwon").submit();
-	        alert("申请提现成功，等待管理员审核~")
+	        alert("正在申请中~")
 			}
 		}
 	

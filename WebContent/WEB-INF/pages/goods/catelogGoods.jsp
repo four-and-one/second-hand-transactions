@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>猿来入此校园二手市场</title>
+    <title>校园二手市场</title>
     <link rel="icon" href="<%=basePath%>img/logo.jpg" type="image/x-icon"/>
     <link rel="stylesheet" href="<%=basePath%>css/index.css" />
     <script type="text/javascript" src="<%=basePath%>js/jquery.js" ></script>
@@ -47,15 +47,13 @@
     </script>
 <body ng-view="ng-view">
 <!--
-   猿来入此
-    时间：2018-2-24 13:28:16
     描述：顶部
 -->
 <div ng-controller="headerController" class="header stark-components navbar-fixed ng-scope">
     <nav class="white nav1">
         <div class="nav-wrapper">
             <a href="<%=basePath%>goods/homeGoods" class="logo">
-                <em class="em1">猿来入此</em>
+                <em class="em1"></em>
                 <em class="em2">校园二手市场</em>
                 <em class="em3"></em>
             </a>
@@ -91,10 +89,6 @@
                     <li>
                         <a>${cur_user.username}</a>
                     </li>
-                    <!-- <li class="notification">
-                        <i ng-click="showNotificationBox()" class="iconfont"></i>
-                        <div ng-show="notification.tagIsShow" class="notification-amount red lighten-1 ng-binding ng-hide">0 </div>
-                    </li> -->
                     <li class="changemore">
                         <a class="changeMoreVertShow()">
                             <i class="iconfont"></i>
@@ -272,9 +266,9 @@
         </a>
     </li>
     <div class="info">
-        <a href="" target="_blank">关于我们</a><em>-</em>
-        <a href="">联系我们</a>
-        <p>©2018 猿来入此校园二手市场</p>
+        <a href="" target="_blank"></a><em>-</em>
+        <a href=""></a>
+        <p></p>
     </div>
 </div>
 <!--
@@ -305,7 +299,7 @@
                             <p><c:out value="${item.goods.name}"></c:out></p>
                         </div>
                         <div class="card-content item-location">
-                            <p>东华大学</p>
+                            <p></p>
                             <p><c:out value="${item.goods.startTime}"></c:out></p>
                         </div>
                     </a>

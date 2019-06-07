@@ -2,7 +2,7 @@ package com.ldu.dao;
 
 import org.apache.ibatis.annotations.Param;
 
-import com.ldu.pojo.Catelog;
+import com.ldu.entity.Catelog;
 
 import java.util.List;
 

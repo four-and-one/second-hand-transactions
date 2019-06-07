@@ -1,6 +1,6 @@
 package com.ldu.service;
 
-import com.ldu.pojo.Admin;
+import com.ldu.entity.Admin;
 
 public interface AdminService {
 

@@ -1,6 +1,6 @@
 package com.ldu.dao;
 
-import com.ldu.pojo.Comments;
+import com.ldu.entity.Comments;
 
 public interface CommentsMapper {
     int deleteByPrimaryKey(Integer id);

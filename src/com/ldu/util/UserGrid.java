@@ -2,13 +2,11 @@ package com.ldu.util;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-import com.ldu.pojo.User;
+import com.ldu.entity.User;
 
 import java.util.List;
 
-/**
- * Created by lyq on 2018/4/26.
- */
+
 
 @XmlRootElement
 public class UserGrid {

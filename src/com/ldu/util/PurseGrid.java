@@ -2,13 +2,11 @@ package com.ldu.util;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-import com.ldu.pojo.Purse;
+import com.ldu.entity.Purse;
 
 import java.util.List;
 
-/**
- * Created by lyq on 2018/4/26.
- */
+
 
 @XmlRootElement
 public class PurseGrid {

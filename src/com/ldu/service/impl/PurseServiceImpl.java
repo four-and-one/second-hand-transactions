@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.github.pagehelper.PageHelper;
 import com.ldu.dao.PurseMapper;
-import com.ldu.pojo.Purse;
+import com.ldu.entity.Purse;
 import com.ldu.service.PurseService;
 
 @Service("PurserService")

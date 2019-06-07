@@ -1,6 +1,6 @@
 package com.ldu.dao;
 
-import com.ldu.pojo.Admin;
+import com.ldu.entity.Admin;
 
 public interface  AdminMapper {
 	

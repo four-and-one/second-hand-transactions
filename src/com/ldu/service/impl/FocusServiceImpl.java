@@ -7,7 +7,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 import com.ldu.dao.FocusMapper;
-import com.ldu.pojo.Focus;
+import com.ldu.entity.Focus;
 import com.ldu.service.FocusService;
 
 @Service("focusService")

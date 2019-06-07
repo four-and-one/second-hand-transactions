@@ -2,7 +2,7 @@ package com.ldu.service;
 
 import java.util.List;
 
-import com.ldu.pojo.User;
+import com.ldu.entity.User;
 
 public interface UserService {
 	public void addUser(User user);

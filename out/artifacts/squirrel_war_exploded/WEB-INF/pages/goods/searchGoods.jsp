@@ -8,8 +8,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <title>猿来入此校园二手市场</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <title>校园二手市场</title>
     <link rel="icon" href="<%=basePath%>img/logo.jpg" type="image/x-icon"/>
     <link rel="stylesheet" href="<%=basePath%>css/index.css" />
     <script type="text/javascript" src="<%=basePath%>js/jquery.js" ></script>
@@ -44,8 +44,21 @@
                 $("#changeName").css("display","none");
             }
         }
+        function search(){
+            var str= $("#search").val();
+            $.ajax({
+                url:'<%=basePath%>goods/search',
+                type:'GET',
+                data:{str:str},
+                dataType:'String',
+            });
+        }
     </script>
 <body ng-view="ng-view">
+<%
+    response.setContentType("text/html;charset=utf-8");
+    request.setCharacterEncoding("utf-8");
+%>
 <!--
 
     描述：顶部
@@ -54,16 +67,16 @@
     <nav class="white nav1">
         <div class="nav-wrapper">
             <a href="<%=basePath%>goods/homeGoods" class="logo">
-                <em class="em1">猿来入此</em>
+                <em class="em1"></em>
                 <em class="em2">校园二手市场</em>
                 <em class="em3"></em>
             </a>
             <div class="nav-wrapper search-bar">
-                <form submit="search()" class="ng-pristine ng-invalid ng-invalid-required" action="<%=basePath%>goods/search">
+                <form>
                     <div class="input-field">
                         <input id="search" placeholder="搜点什么吧..." name="str" style="height: 40px;"
                                class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required" value="<c:out value="${search}"></c:out>"/>
-                        <input type="submit" class="btn"value="搜索"></input>
+                        <input type="input" class="btn"value="搜索"></input>
                         <label for="search" class="active">
                             <i onclick="search()" class="iconfont"></i>
                         </label>
@@ -273,9 +286,9 @@
         </a>
     </li>
     <div class="info">
-        <a href="" target="_blank">关于我们</a><em>-</em>
-        <a href="">联系我们</a>
-        <p>©2018 PTUACM工作室</p>
+        <a href="" target="_blank"></a><em>-</em>
+        <a href=""></a>
+        <p></p>
     </div>
 </div>
 <!--
@@ -307,7 +320,7 @@
                             <p><c:out value="${item.goods.name}"></c:out></p>
                         </div>
                         <div class="card-content item-location">
-                            <p>东华大学</p>
+                            <p></p>
                             <p><c:out value="${item.goods.startTime}"></c:out></p>
                         </div>
                     </a>

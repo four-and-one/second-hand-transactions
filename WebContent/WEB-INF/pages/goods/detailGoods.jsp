@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>猿来入此校园二手市场</title>
+    <title>校园二手市场</title>
     <link rel="icon" href="<%=basePath%>img/logo.jpg" type="image/x-icon"/>
     <link rel="stylesheet" href="<%=basePath%>css/index.css" />
     <script type="text/javascript" src="<%=basePath%>js/jquery.js" ></script>
@@ -72,7 +72,7 @@
     <nav class="white nav1">
         <div class="nav-wrapper">
             <a href="<%=basePath%>goods/homeGoods" class="logo">
-                <em class="em1">猿来入此</em>
+                <em class="em1"></em>
                 <em class="em2">校园二手市场</em>
                 <em class="em3"></em>
             </a>
@@ -111,10 +111,6 @@
                     <li>
                         <a>${cur_user.username}</a>
                     </li>
-                   <!--  <li class="notification">
-                        <i ng-click="showNotificationBox()" class="iconfont"></i>
-                        <div ng-show="notification.tagIsShow" class="notification-amount red lighten-1 ng-binding ng-hide">0 </div>
-                    </li> -->
                     <li class="changemore">
                         <a class="changeMoreVertShow()">
                             <i class="iconfont"></i>
@@ -268,7 +264,7 @@
             <p class="bargain">可讲价</p>
             <p>
                 <i class="iconfont"></i>
-                <em class="item-location">东华大学</em>
+                <em class="item-location">北京交通大学</em>
             </p>
         </div>
         <div class="publisher-info-title">
@@ -333,7 +329,7 @@
     <p class="section">描述：${goodsExtend.goods.describle}</p>
     <p class="section"></p>
     <p class="section">
-        联系我的时候，请说明是在“猿来入此校园二手市场”上看见的哦~
+        联系我哦~
     </p>
 </div>
 <div class="row detail-area">

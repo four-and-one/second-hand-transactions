@@ -24,14 +24,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.ldu.pojo.Catelog;
-import com.ldu.pojo.CommentExtend;
-import com.ldu.pojo.Comments;
-import com.ldu.pojo.Goods;
-import com.ldu.pojo.GoodsExtend;
-import com.ldu.pojo.Image;
-import com.ldu.pojo.Purse;
-import com.ldu.pojo.User;
+import com.ldu.entity.Catelog;
+import com.ldu.entity.CommentExtend;
+import com.ldu.entity.Comments;
+import com.ldu.entity.Goods;
+import com.ldu.entity.GoodsExtend;
+import com.ldu.entity.Image;
+import com.ldu.entity.Purse;
+import com.ldu.entity.User;
 import com.ldu.service.CatelogService;
 import com.ldu.service.GoodsService;
 import com.ldu.service.ImageService;
@@ -114,8 +114,9 @@ public class GoodsController {
 	 * @return
 	 * @throws Exception
 	 */
-	@RequestMapping(value = "/search")
-	public ModelAndView searchGoods(@RequestParam(value = "str", required = false) String str) throws Exception {
+	@RequestMapping(value = "/search",method = RequestMethod.GET)
+	public ModelAndView searchGoods(HttpServletRequest request) throws Exception {
+		String str=request.getParameter("str");
 		List<Goods> goodsList = goodsService.searchGoods(str, str);
 		List<GoodsExtend> goodsExtendList = new ArrayList<GoodsExtend>();
 		for (int i = 0; i < goodsList.size(); i++) {

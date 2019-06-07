@@ -5,7 +5,7 @@ import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 import com.ldu.dao.AdminMapper;
-import com.ldu.pojo.Admin;
+import com.ldu.entity.Admin;
 import com.ldu.service.AdminService;
 
 @Service(value="adminService")

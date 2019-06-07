@@ -24,7 +24,7 @@
         </javaTypeResolver>
 
         <!--生成实体类） -->
-        <javaModelGenerator targetPackage="com.ldu.pojo" targetProject="E:/IntelliJ_Project/squirrel/src/main/java">
+        <javaModelGenerator targetPackage="com.ldu.entity" targetProject="E:/IntelliJ_Project/squirrel/src/main/java">
             <property name="enableSubPackages" value="false" />
             <property name="trimStrings" value="true" />
         </javaModelGenerator>

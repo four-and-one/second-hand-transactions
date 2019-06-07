@@ -2,7 +2,7 @@ package com.ldu.service;
 
 import java.util.List;
 
-import com.ldu.pojo.Orders;
+import com.ldu.entity.Orders;
 
 public interface OrdersService {
 	

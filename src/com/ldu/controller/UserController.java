@@ -1,13 +1,12 @@
 package com.ldu.controller;
 
-import com.ldu.pojo.Focus;
-import com.ldu.pojo.Goods;
-import com.ldu.pojo.GoodsExtend;
-import com.ldu.pojo.Image;
-import com.ldu.pojo.Notice;
-import com.ldu.pojo.NoticeExtend;
-import com.ldu.pojo.Purse;
-import com.ldu.pojo.User;
+import com.ldu.entity.Focus;
+import com.ldu.entity.Goods;
+import com.ldu.entity.GoodsExtend;
+import com.ldu.entity.Image;
+import com.ldu.entity.Notice;
+import com.ldu.entity.Purse;
+import com.ldu.entity.User;
 import com.ldu.service.FocusService;
 import com.ldu.service.GoodsService;
 import com.ldu.service.ImageService;
@@ -26,8 +25,6 @@ import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import java.io.IOException;
-import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -361,6 +358,7 @@ public class UserController {
 		Integer user_id = cur_user.getId();
 		purse.setUserId(user_id);
 		purse.setState(0);
+
 		if (purse.getRecharge() != null) {
 			purseService.updatePurse(purse);
 		}

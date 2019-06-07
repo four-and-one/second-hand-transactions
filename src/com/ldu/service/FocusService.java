@@ -2,7 +2,7 @@ package com.ldu.service;
 
 import java.util.List;
 
-import com.ldu.pojo.Focus;
+import com.ldu.entity.Focus;
 
 public interface FocusService {
 	

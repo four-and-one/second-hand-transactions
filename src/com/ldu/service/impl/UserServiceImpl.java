@@ -2,7 +2,7 @@ package com.ldu.service.impl;
 
 import com.github.pagehelper.PageHelper;
 import com.ldu.dao.UserMapper;
-import com.ldu.pojo.User;
+import com.ldu.entity.User;
 import com.ldu.service.UserService;
 
 import org.springframework.stereotype.Service;

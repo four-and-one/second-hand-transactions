@@ -2,11 +2,9 @@ package com.ldu.service;
 
 import java.util.List;
 
-import com.ldu.pojo.Image;
+import com.ldu.entity.Image;
 
-/**
- * Created by lenovo on 2017/5/12.
- */
+
 public interface ImageService {
     int insert(Image record);
     /**
