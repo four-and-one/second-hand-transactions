@@ -106,9 +106,6 @@
                         </button>
                     </li>
                     <li>
-                        <a href="<%=basePath%>user/allGoods">我发布的商品</a>
-                    </li>
-                    <li>
                         <a>${cur_user.username}</a>
                     </li>
                     <li class="changemore">
@@ -118,9 +115,6 @@
                         <div class="more-vert">
                             <ul class="dropdown-content">
                                 <li><a href="<%=basePath%>user/home">个人中心</a></li>
-                                 <li><a href="<%=basePath%>user/allFocus">我的关注</a></li>
-                                <li><a onclick="ChangeName()">更改用户名</a></li>
-                                <li><a href="<%=basePath%>admin" target="_blank">登录后台</a></li>
                                 <li><a href="<%=basePath%>user/logout">退出登录</a></li>
                             </ul>
                         </div>
@@ -212,30 +206,7 @@
         </div>
     </div>
 </div>
-<!--更改用户名-->
-<div ng-controller="changeNameController" class="ng-scope">
-    <div id="changeName" class="change-name stark-components">
-        <div class="publish-box z-depth-4">
-            <div class="row">
-                <div class="col s12 title">
-                    <h1>修改用户名</h1>
-                </div>
-                <form:form action="../../user/changeName" method="post" commandName="user" role="form">
-                    <div class="input-field col s12">
-                        <input type="text" name="username" required="required" class="validate ng-pristine ng-empty ng-invalid ng-invalid-required ng-valid-pattern ng-touched" />
-                        <label>修改用户名</label>
-                    </div>
-                    <div ng-show="checkTelIsShow" class="col s12">
-                        <button class="waves-effect waves-light btn publish-btn red lighten-1">
-                            <i class="iconfont left"></i>
-                            <em>确认</em>
-                        </button>
-                    </div>
-                </form:form>
-            </div>
-        </div>
-    </div>
-</div>
+
 <!--显示商品详情-->
 <div ng-controller="detailBoxController" class="detail-box stark-components z-depth-1 row ng-scope">
     <div class="col s12 path">
