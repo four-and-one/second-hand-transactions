@@ -10,7 +10,7 @@
           <element id="library" level="project" name="lib" />
         </element>
       </element>
-      <element id="javaee-facet-resources" facet="second-hand/web/Web" />
+      <element id="javaee-facet-resources" facet="secondhand/web/Web" />
     </root>
   </artifact>
 </component>
